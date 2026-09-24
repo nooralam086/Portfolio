@@ -5,8 +5,8 @@ function Hero(){
             <div className="container hero-inner">
                 <div className="hero-text">
                     <p className="hero-greeting">Hi, I'm</p>
-                    <h1 className="hero-name">Noor Alam</h1>
-                    <h2 className="hero-title">MERN Stack Developer</h2>
+                    <h1 className="hero-name" >Noor Alam</h1>
+                    <h2 className="hero-title" >MERN Stack Developer</h2>
                     <p className="hero-tagline">I build simple, fast web apps with
                         React and Node.js - and I'm looking for my first rile as a
                         full-stack developer
@@ -16,7 +16,7 @@ function Hero(){
                             See my projects
                         </a>
                         <a href="#contact" className="btn btn-outline">
-                            Contact me
+                            +91-7394994080
                         </a>
                      </div>
                     
