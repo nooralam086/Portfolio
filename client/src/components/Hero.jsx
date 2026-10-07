@@ -1,15 +1,13 @@
 import "./Hero.css";  
-function Hero(){
+function Hero({profile}){
     return (
         <section className="hero" id="home">
             <div className="container hero-inner">
                 <div className="hero-text">
                     <p className="hero-greeting">Hi, I'm</p>
-                    <h1 className="hero-name" >Noor Alam</h1>
-                    <h2 className="hero-title" >MERN Stack Developer</h2>
-                    <p className="hero-tagline">I build simple, fast web apps with
-                        React and Node.js - and I'm looking for my first rile as a
-                        full-stack developer
+                    <h1 className="hero-name" >{profile.name}</h1>
+                    <h2 className="hero-title" >{profile.title}</h2>
+                    <p className="hero-tagline">{profile.tagline}
                     </p>
                     <div className="hero-buttons">
                         <a href="#projects" className="btn btn-primary">
@@ -22,7 +20,7 @@ function Hero(){
                     
                 </div>
                 <div className="hero-photo">
-                    <img src="alamnoor.jpeg" alt="Noor Alam" width={200} height={400} />
+                    <img src={profile.photo} alt="Noor Alam" width={200} height={400} />
                  
                 </div>
              </div> 

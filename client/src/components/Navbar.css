@@ -35,6 +35,7 @@
   color: var(--ink);
   font-weight: 500;
   padding: 6px 0;
+  
   border-bottom: 2px solid transparent;
 }
 
@@ -45,6 +46,7 @@
 .navbar-toggle {
   display: none;
   background: none;
+  
   border: 1.5px solid var(--border);
   border-radius: 8px;
   width: 42px;

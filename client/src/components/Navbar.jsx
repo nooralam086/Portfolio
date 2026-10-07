@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
-function Navbar(){
+function Navbar(profile){
 
     const [menuOpen, setMenuOpen] =useState(false);
     function toggleMenu(){
@@ -13,13 +13,13 @@ function Navbar(){
         <header className="navbar">
             <nav className="container navbar-inner">
                 <a href="#home" className="navbar-logo" onClick={closeMenu}>
-                    Noor Alam
+                {profile.name}
                 </a>
                 <button className="navbar-toggle"
                 onClick={toggleMenu}
                 aria-label="Open or close the menu"
                 aria-expanded={menuOpen}>
-                    {menuOpen ? "X" : "☰"}
+                {menuOpen ? "X" : "☰"}
                 </button>
                 <ul className= {menuOpen? "navbar-links open": "navbar-links"}>
                     <li>
